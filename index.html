@@ -3,19 +3,7 @@
   
     <head>
         <style>
-		    html,body{
-		        display:flex;
-		        flex-wrap: wrap;
-		        height:100%;
-		        width:100%;
-		        padding-left:2%;
-		        padding-right:2%;
-		    }
-		    div{
-		        height:10%;
-		        width:9%;
-		        border: 1px solid black;
-		    }
+		   
 		</style>
         <script src="https://cdn.codehs.com/chs-js-lib/0.2.21/dist/chs.iife.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,43 +13,7 @@
         <canvas width="400" height="480"></canvas>
 
         <script>
-		    for(var i = 0; i < 100; i++) {
-		        var locate = document.createElement("div");
-		        document.body.appendChild(locate);
-		    }
 		    
-		    var DL = document.getElementsByTagName("div");
-		    
-		    for(var i = 0; i < DL.length; i++)
-		    {
-		       
-		        DL[i].addEventListener("mouseover", paint);
-		        
-		    }
-		    
-		    function paint() {
-		        
-		    
-		       var num = Math.floor(Math.random()*4)
-		       
-		       var colorr = "red";
-		       
-		       if (num == 0) {
-		           colorr = "blue"
-		       }
-		       if (num == 1) {
-		           colorr = "green"
-		       }
-		       if (num == 2) {
-		           colorr = "purple"
-		       }
-		       this.style.backgroundColor = colorr;
-
-		       
-		      
-		    } 
-		    
-		    //write function paint 
 		</script>
     </body>
 
