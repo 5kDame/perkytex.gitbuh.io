@@ -5,21 +5,65 @@
 		<title>
 			Damien's resume
 		</title>
-		<div id = HP>Home</dic>
         <style>
 			#HP 
 			{
 				font-size:	160px;
-				margin-left: 700px;
+				text-align: center;
+				
 				
 			}
+			#MTP 
+			{
+				display:flex;
+				flex-direction: column;
+				border-color: black;
+				border-width: 2px;
+				border-style: solid;
+			}
+			#picHolderMTP
+			{
+				display:flex;
+				justify-content: center;
+				gap: 50px;
+			}
+			#MTPText
+			{
+				padding: 20px;
+				text-align: center;
+				margin-left: -300px;
+			}
+			#leftPic
+			{
+				width: 200px;
+				height: 200px;
+			}
+			#middlePic
+			{
+				width: 200px;
+				height: 200px;
+			}
+
 		</style>
         <script src="https://cdn.codehs.com/chs-js-lib/0.2.21/dist/chs.iife.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <!-- <h1>Hello! This is Damien's resume </h1> -->
-        <canvas width="400" height="480"></canvas>
+		<div id = HP>Home</div>
+		
+		<div id = MTP>
+			<div id = picHolderMTP>
+				<img src="https://media.istockphoto.com/id/1398462038/photo/online-exam-or-test.jpg?s=1024x1024&w=is&k=20&c=vWUnpuaoOhP--xc0MdCCiT7GyzSjW1Mk7vuegnE9Oh0=" id = leftPic>
+				<img src = "https://media.istockphoto.com/id/1398462038/photo/online-exam-or-test.jpg?s=1024x1024&w=is&k=20&c=vWUnpuaoOhP--xc0MdCCiT7GyzSjW1Mk7vuegnE9Oh0=" id = middlePic>
+				<div id = rightPic>rp</div>
+			</div>
+			
+			<div id = MTPText>Hi my name is Damien!</div>
+	
+
+		</div>
+		
+
 
         <script>
 		    
