@@ -11,16 +11,36 @@
 
 			
 			
-			
+			#buttonContainer {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				justify-content: space-between;
+				
+			}
+			#buttonContainer button {
+				margin: 20px;
+			}
 			
 			#Hello
 			{
 				/* display: none; */
 				position: absolute;
-				top: 250px;
+				/* top: 250px; */
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+
+				/* height: 400px; */
+				height: 80%;
+				width: 70%;
+
+				/* top: 250px;
 				left: 550px;
 				height: 400px;
-				width: 700px;
+				width: 700px; */
 				border-color: white;
 
 				transition: height 1s, width 1s;
@@ -363,11 +383,11 @@
 			#toggle0
 			{
 				display: none;
-				position: absolute;
+				/* position: absolute; */
 				width: 115px;
 				height: 55px;
-				top: 25px;
-				left: 100px;
+				/* top: 25px; */
+				/* left: 100px; */
 				font-size: large;
 				
 				border-width: 5px;
@@ -411,11 +431,11 @@
 			#toggle1
 			{
 				display: none;
-				position: absolute;
+				/* position: absolute; */
 				width: 115px;
 				height: 55px;
-				top: 25px;
-				left: 265px;
+				/* top: 25px; */
+				/* left: 265px; */
 				font-size: large;
 
 				border-width: 5px;
@@ -426,11 +446,11 @@
 			#toggle2
 			{
 				display: none;
-				position: absolute;
+				/* position: absolute; */
 				width: 115px;
 				height: 55px;
-				top: 25px;
-				left: 430px;
+				/* top: 25px; */
+				/* left: 430px; */
 				font-size: large;
 
 				border-width: 5px;
@@ -446,11 +466,11 @@
 			#toggle3
 			{
 				display: none;
-				position: absolute;
+				/* position: absolute; */
 				width: 115px;
 				height: 55px;
-				top: 25px;
-				left: 1320px;
+				/* top: 25px; */
+				/* left: 1320px; */
 				font-size: Large;
 
 				border-width: 5px;
@@ -464,11 +484,11 @@
 			#toggle4
 			{
 				display: none;
-				position: absolute;
+				/* position: absolute; */
 				width: 115px;
 				height: 55px;
-				top: 25px;
-				left: 1485px;
+				/* top: 25px; */
+				/* left: 1485px; */
 				font-size: large;
 
 				border-width: 5px;
@@ -482,11 +502,11 @@
 			#toggle5
 			{
 				display: none;
-				position: absolute;
+				/* position: absolute; */
 				width: 115px;
 				height: 55px;
-				top: 25px;
-				left: 1650px;
+				/* top: 25px; */
+				/* left: 1650px; */
 				font-size: large;
 
 				border-width: 5px;
@@ -526,14 +546,20 @@
 
 		<button id = Hello><img src = "data:image/jpeg;base64,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" id = Hellopic></button>
 		
-		
-		<button id = toggle0>About Me</button>
-		<button id = toggle1>Where I'm From</button>
-		<button id = toggle2>Education</button>
-		<button id = toggle3>Extra curricular's</button>
-		<button id = toggle4>DS Intership</button>
-		<button id = toggle5>My JS Game</button>
-		
+		<div id="buttonContainer">
+			<div>
+				<button id = toggle0>About Me</button>
+				<button id = toggle1>Where I'm From</button>
+				<button id = toggle2>Education</button>
+			</div>
+			<div>
+				<button id = toggle3>Extra curricular's</button>
+				<button id = toggle4>DS Intership</button>
+				<button id = toggle5>My JS Game</button>
+			</div>
+		</div>
+
+
 		<div id = HP>Home</div>
 		
 		
